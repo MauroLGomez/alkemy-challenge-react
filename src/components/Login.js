@@ -4,7 +4,19 @@ function Login() {
       e.preventDefault();
       const email = e.target.email.value;
       const password = e.target.password.value;
-      console.log(email, password);
+      const regexEmail =
+  /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+
+   if (email === "") {
+      console.log("Escribe un correo valido") 
+         }
+   else if (password === "") {
+      console.log("Escribe una contraseña")
+         } 
+   }
+
+   if (email !== "" && regexEmail.test(email)) {
+      console.log("escribe un correo valido")
    }
 
    return(
@@ -13,7 +25,7 @@ function Login() {
       <form onSubmit={submitHandler}>
          <label>
             <span>Correo Electrónico:</span> <br/>
-            <input type="email" name="email"/>
+            <input type="text" name="email"/>
          </label>
          <br/>
          <label>
