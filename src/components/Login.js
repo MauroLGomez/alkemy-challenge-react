@@ -16,7 +16,7 @@ function Login() {
    }
 
    if (email !== "" && regexEmail.test(email)) {
-      console.log("escribe un correo valido")
+      console.log("escribe un correo valido");
    }
 
    return(
