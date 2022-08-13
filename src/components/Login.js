@@ -1,7 +1,6 @@
 import axios from "axios";
 import swAlert from "@sweetalert/with-react";
 import { useNavigate } from "react-router-dom";
-
 function Login() {
 
    const Navigate = useNavigate();
@@ -49,7 +48,7 @@ function Login() {
    }
 
    return(
-      <>
+   <>
       <h2>Formulario De Login</h2>
       <form onSubmit={submitHandler}>
          <label>
@@ -64,7 +63,7 @@ function Login() {
          </label>
          <button type="submit">Ingresar</button>
       </form>
-      </>
+   </>
    )     
 }
 
